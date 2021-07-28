@@ -14,4 +14,4 @@ class MobileView(generics.ListCreateAPIView):
 class MobileDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class= MobileSerializer
     queryset= MobileModel.objects.all()
-    permission_classes = (IsAuthorOrReadOnly,)
+  
